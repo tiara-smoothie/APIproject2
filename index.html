@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="api.css" />
+    <title>API profile</title>
+  </head>
+  <body>
+    <!-- Teks Berjalan -->
+    <div class="marquee-bg py-1 text-center text-uppercase marquee-custom">
+      <marquee scrollamount="5">
+        ✦ Aliansi Perpustakaan Independent &nbsp;&nbsp;&nbsp;&nbsp; ✦ Aliansi
+        Perpustakaan Independent &nbsp;&nbsp;&nbsp;&nbsp; ✦ Aliansi Perpustakaan
+        Independent &nbsp;&nbsp;&nbsp;&nbsp; ✦ Aliansi Perpustakaan Independent
+        &nbsp;&nbsp;&nbsp;&nbsp; ✦ Aliansi Perpustakaan Independent
+        &nbsp;&nbsp;&nbsp;&nbsp; ✦ Aliansi Perpustakaan Independent
+      </marquee>
+    </div>
+
+    <!-- Hero Section (Warna Maroon) -->
+    <div class="bg-hero-section text-cream-custom">
+      <div class="container">
+        <!-- ======== NAVBAR ======== -->
+        <nav class="navbar navbar-expand-lg navbar-custom pt-4">
+          <div class="container-fluid px-0">
+            <!-- Kiri: Logo Foto -->
+            <a class="navbar-brand px-0" href="#">
+              <img
+                src="image/logoapi.png (1).png"
+                alt="Logo API Literasi Bandung"
+                style="height: 45px; width: auto; object-fit: contain"
+              />
+            </a>
+
+            <!-- Tombol Hamburger untuk Tampilan HP -->
+            <button
+              class="navbar-toggler border-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Kanan: Menu Navigasi Samping Logo -->
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav gap-4 align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold text-cream-custom"
+                    href="https://literasibandung.id/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://literasibandung.id/peta/"
+                    >Maps</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-cream-custom"
+                    href="https://literasibandung.id/about/"
+                    >About</a
+                  >
+                </li>
+                <!-- Kotak Kapsul Lonjong Putih Paling Kanan -->
+                <li class="nav-item">
+                  <!-- Ganti div kotak putih kamu dengan kodingan tombol ini -->
+                  <a
+                    href="#bagian-katalog"
+                    class="btn bg-cream-custom rounded-pill px-4 py-2 fw-bold shadow-sm"
+                    style="color: #58181f; font-size: 14px; transition: 0.3s"
+                  >
+                    Jelajahi Perpustakaan
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======== END OF NAVBAR ======== -->
+
+        <div class="row mt-3 mb-5 justify-content-center">
+          <div class="col-12">
+            <img
+              src="image/Beranda.png"
+              class="img-fluid w-100 rounded-5 shadow-lg"
+              alt="Suasana The Room 19"
+              style="max-height: 550px; object-fit: cover"
+            />
+          </div>
+        </div>
+        <!-- ======== END OF FOTO GEDE ======== -->
+      </div>
+      <!-- Penutup .container -->
+    </div>
+    <!-- Penutup .bg-hero-section -->
+
+    <!-- Area Daftar Perpustakaan Aliansi (Warna Cream) -->
+    <div class="bg-cream-body" id="bagian-katalog">
+      <div class="container py-4">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="input-group shadow-sm">
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control form-search-custom bg-white px-4 py-2"
+                placeholder="Cari perpustakaan di Bandung... (misal: Kineruku)"
+                aria-label="Cari perpustakaan"
+              />
+
+              <button
+                class="btn btn-search-custom px-4"
+                type="button"
+                id="searchButton"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 px-4 px-md-5 py-4" id="librarylist">
+          <!-- KARTU 1: Salman Reading Center -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-salman.jpg"
+                class="card-img-top rounded-4"
+                alt="Salman Reading Center"
+                style="height: 200px; object-fit: cover"
+              />
+
+              <div class="card-body px-1 pt-3">
+                <!-- Baris Tombol Kecil -->
+                <div class="d-flex gap-2 mb-2">
+                  <a href="salman.html" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <!-- Judul & Deskripsi -->
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Salman Reading Center
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Salman Reading Center (SRC) merupakan perpustakaan yang berada
+                  di kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 2: Pitimoss Fun Library -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-pitimoss.jpg"
+                class="card-img-top rounded-4"
+                alt="Pitimoss"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Pitimoss Fun Library
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Pitimoss Fun Library menawarkan perpustakaan komik terbesar di
+                  Kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 3: Kineruku -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-kineruku.jpg"
+                class="card-img-top rounded-4"
+                alt="Kineruku"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Kineruku
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Perpustakaan Kineruku adalah ruang baca, perpustakaan swasta,
+                  dan toko buku...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 4: The Room 19 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-theroom19.jpg"
+                class="card-img-top rounded-4"
+                alt="The Room 19"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  The Room 19
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Di sini disediakan tentang cara reservasi, kapan saat yang
+                  mengharuskan buat reservasi...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 1: Salman Reading Center -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <!-- Foto Placeholder Gunung/Awan seperti di Canva kamu -->
+              <img
+                src="image/perpus-salman.jpg"
+                class="card-img-top rounded-4"
+                alt="Salman Reading Center"
+                style="height: 200px; object-fit: cover"
+              />
+
+              <div class="card-body px-1 pt-3">
+                <!-- Baris Tombol Kecil -->
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <!-- Judul & Deskripsi -->
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Salman Reading Center
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Salman Reading Center (SRC) merupakan perpustakaan yang berada
+                  di kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 2: Pitimoss Fun Library -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-pitimoss.jpg"
+                class="card-img-top rounded-4"
+                alt="Pitimoss"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Pitimoss Fun Library
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Pitimoss Fun Library menawarkan perpustakaan komik terbesar di
+                  Kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 3: Kineruku -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-kineruku.jpg"
+                class="card-img-top rounded-4"
+                alt="Kineruku"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Kineruku
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Perpustakaan Kineruku adalah ruang baca, perpustakaan swasta,
+                  dan toko buku...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 4: The Room 19 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-theroom19.jpg"
+                class="card-img-top rounded-4"
+                alt="The Room 19"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  The Room 19
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Di sini disediakan tentang cara reservasi, kapan saat yang
+                  mengharuskan buat reservasi...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 1: Salman Reading Center -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <!-- Foto Placeholder Gunung/Awan seperti di Canva kamu -->
+              <img
+                src="image/perpus-salman.jpg"
+                class="card-img-top rounded-4"
+                alt="Salman Reading Center"
+                style="height: 200px; object-fit: cover"
+              />
+
+              <div class="card-body px-1 pt-3">
+                <!-- Baris Tombol Kecil -->
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <!-- Judul & Deskripsi -->
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Salman Reading Center
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Salman Reading Center (SRC) merupakan perpustakaan yang berada
+                  di kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 2: Pitimoss Fun Library -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-pitimoss.jpg"
+                class="card-img-top rounded-4"
+                alt="Pitimoss"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Pitimoss Fun Library
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Pitimoss Fun Library menawarkan perpustakaan komik terbesar di
+                  Kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 3: Kineruku -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-kineruku.jpg"
+                class="card-img-top rounded-4"
+                alt="Kineruku"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Kineruku
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Perpustakaan Kineruku adalah ruang baca, perpustakaan swasta,
+                  dan toko buku...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 4: The Room 19 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-theroom19.jpg"
+                class="card-img-top rounded-4"
+                alt="The Room 19"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  The Room 19
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Di sini disediakan tentang cara reservasi, kapan saat yang
+                  mengharuskan buat reservasi...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 1: Salman Reading Center -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <!-- Foto Placeholder Gunung/Awan seperti di Canva kamu -->
+              <img
+                src="image/perpus-salman.jpg"
+                class="card-img-top rounded-4"
+                alt="Salman Reading Center"
+                style="height: 200px; object-fit: cover"
+              />
+
+              <div class="card-body px-1 pt-3">
+                <!-- Baris Tombol Kecil -->
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <!-- Judul & Deskripsi -->
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Salman Reading Center
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Salman Reading Center (SRC) merupakan perpustakaan yang berada
+                  di kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 2: Pitimoss Fun Library -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-pitimoss.jpg"
+                class="card-img-top rounded-4"
+                alt="Pitimoss"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Pitimoss Fun Library
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Pitimoss Fun Library menawarkan perpustakaan komik terbesar di
+                  Kota Bandung...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 3: Kineruku -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-kineruku.jpg"
+                class="card-img-top rounded-4"
+                alt="Kineruku"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Kineruku
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Perpustakaan Kineruku adalah ruang baca, perpustakaan swasta,
+                  dan toko buku...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- KARTU 4: The Room 19 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 card-perpus p-3">
+              <img
+                src="image/perpus-theroom19.jpg"
+                class="card-img-top rounded-4"
+                alt="The Room 19"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body px-1 pt-3">
+                <div class="d-flex gap-2 mb-2">
+                  <a href="#" class="btn-capsule-maroon">Preview</a>
+                  <a href="#" class="btn-capsule-maroon">Reservasi</a>
+                </div>
+                <h6
+                  class="fw-bold text-dark mb-1"
+                  style="color: #58181f !important"
+                >
+                  Mutiara
+                </h6>
+                <p class="text-muted" style="font-size: 12px; line-height: 1.4">
+                  Di sini disediakan tentang cara reservasi, kapan saat yang
+                  mengharuskan buat reservasi...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Penutup .row baris pertama -->
+        <div class="row mt-5 pt-4 justify-content-center">
+          <div class="col-12 text-center">
+            <img
+              src="image/apibandung.png"
+              alt="API Bandung"
+              class="img-fluid w-100"
+              alt="API Bandung"
+              style="max-height: 300px; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+    <script src="api.js"></script>
+  </body>
+</html>

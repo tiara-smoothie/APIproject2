@@ -1,0 +1,325 @@
+.bg-maroon-custom {
+  background-color: #55131b;
+}
+
+.bg-cream-custom {
+  background-color: #f5f0e8;
+}
+
+.text-cream-custom {
+  color: #f5f0e8;
+}
+
+.marquee-custom {
+  background-color: #f5f0e8;
+  color: #55131b;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.bg-hero-section {
+  background-color: #55131b;
+  padding-bottom: 60px;
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+navbar.custom .nav-link-active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #f5ebe6 !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important; /* Berubah jadi putih terang saat disentuh kursor */
+}
+
+/* api.css */
+
+.bg-hero-section {
+  background-color: #58181f; /* Maroon kamu */
+  padding-bottom: 40px; /* Jarak di bawah foto gede sebelum masuk ke area cream */
+}
+
+/* Warna cream latar belakang untuk area daftar perpustakaan di bawahnya */
+.bg-cream-body {
+  background-color: #f5ebe6;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+/* Kustomisasi kartu  */
+.card-perpus {
+  background-color: transparent;
+  border: 2px solid #58181f !important; /* Garis tepi maroon tipis */
+  border-radius: 20px !important; /* Membuat sudut kartu melengkung halus */
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card-perpus:hover {
+  transform: translateY(-5px); /* Efek melayang sedikit kalau kursor nempel */
+}
+
+/* Tombol kecil capsule "Preview" dan "Reservasi" */
+.btn-capsule-maroon {
+  background-color: transparent;
+  color: #58181f;
+  border: 1.5px solid #58181f;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+.btn-capsule-maroon:hover {
+  background-color: #58181f;
+  color: #f5ebe6;
+}
+
+/* page deskripsi */
+.btn-kapsul-maroon {
+  background-color: #58181f !important;
+  color: #f5ebe6 !important;
+  border: 2px solid #58181f !important;
+  border-radius: 50px !important;
+  padding: 10px 28px !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-kapsul-maroon:hover {
+  background-color: transparent !important;
+  color: #58181f !important;
+}
+
+/* Tombol Kapsul Garis Saja (Outline) */
+.btn-kapsul-outline {
+  background-color: transparent !important;
+  color: #58181f !important;
+  border: 2px solid #58181f !important;
+  border-radius: 50px !important;
+  padding: 10px 28px !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-kapsul-outline:hover {
+  background-color: #58181f !important;
+  color: #f5ebe6 !important;
+}
+
+/* mulai ke page profiil */
+.text-maroon-custom {
+  color: #58181f !important;
+}
+
+.box-deskripsi {
+  background-color: #e8dacf;
+}
+
+.garis-tipis {
+  border: none;
+  border-top: 1px solid #58181f; /* Warna maroon */
+  opacity: 0.2; /* Dibuat agak transparan biar soft/tipis */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-lokasi {
+  background-color: #7d8491 !important; /* Abu-abu kebiruan */
+  border: none;
+}
+.btn-lokasi:hover {
+  background-color: #636a77 !important;
+}
+
+.btn-sosmed {
+  background-color: #2b3a4a !important; /* Navy gelap */
+  border: none;
+}
+.btn-sosmed:hover {
+  background-color: #1e2936 !important;
+}
+
+.btn-opac {
+  background-color: #58181f !important; /* Maroon */
+  border: none;
+}
+.btn-opac:hover {
+  background-color: #3d1015 !important;
+}
+
+/* funfact space */
+.box-funfact {
+  background-color: #58181f;
+  border-radius: 30px !important;
+}
+
+.badge-funfact {
+  background-color: #82929e;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 35px;
+  letter-spacing: 0.5px;
+}
+
+.funfact-img {
+  border: 10px solid #e8dacf;
+  border-radius: 20px; /* Sudut foto dan bingkai melengkung */
+  object-fit: cover;
+  width: 100%;
+  max-width: 400px; /* Menjaga agar foto tidak terlalu besar */
+  height: 260px; /* Ketinggian foto disamaratakan */
+}
+
+/* ========================================= */
+/* KHUSUS MINI GALLERY (PINTEREST STYLE)     */
+
+/* Mengatur jumlah kolom layaknya Pinterest */
+.pinterest-gallery {
+  column-count: 4; /* Di layar laptop besar, pecah jadi 4 kolom */
+  column-gap: 15px; /* Jarak antar kolom */
+}
+
+/* Responsif: Makin kecil layar, jumlah kolomnya berkurang */
+@media (max-width: 991px) {
+  .pinterest-gallery {
+    column-count: 3;
+  }
+}
+@media (max-width: 767px) {
+  .pinterest-gallery {
+    column-count: 2;
+  } /* Di HP jadi 2 kolom biar foto gak kekecilan */
+}
+
+/* Wadah masing-masing foto */
+.gallery-item {
+  position: relative;
+  margin-bottom: 15px; /* Jarak bawah antar foto */
+  border-radius: 15px;
+  overflow: hidden;
+  break-inside: avoid; /* Mencegah foto terpotong di tengah jalan pindah kolom */
+  cursor: pointer;
+}
+
+/* Fotonya sendiri */
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease; /* Transisi durasi zoom saat di-hover */
+}
+
+/* Lapisan Keterangan (Awalnya transparan/tidak terlihat) */
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    88,
+    24,
+    31,
+    0.85
+  ); /* Warna maroon dengan efek kaca 85% */
+  color: #f5ebe6; /* Teks warna cream */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Sengaja disembunyikan */
+  transition: opacity 0.4s ease; /* Transisi durasi muncul */
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* ========================================= */
+/* EFEK KETIKA KURSOR DIARAHKAN (HOVER)      */
+
+/* 1. Fotonya nge-zoom sedikit ke dalam */
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* 2. Lapisan Keterangannya muncul */
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* ========================================= */
+/* KHUSUS SECTION YOU MIGHT LIKE (POLAROID)  */
+
+/* Pengaturan dasar bentuk kartu polaroid */
+.card-polaroid {
+  display: block;
+  padding: 15px; /* Bingkai di sisi atas, kiri, kanan */
+  padding-bottom: 25px; /* Bingkai bawah dibuat lebih tebal (ciri khas polaroid) */
+  border-radius: 20px; /* Sudut melengkung luar */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efek saat polaroidnya disentuh kursor */
+.card-polaroid:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Wadah kotak putih di dalam polaroid */
+.polaroid-img-wrapper {
+  background-color: #f5ebe6; /* Warna cream untuk jaga-jaga kalau foto belum dimuat */
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1; /* Memaksa foto menjadi KOTAK SEMPURNA (1:1) */
+}
+
+/* Fotonya menyesuaikan kotak */
+.polaroid-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Palet Warna 4 Kartu Polaroid --- */
+.bg-polaroid-maroon {
+  background-color: #4a1218;
+  color: #f5ebe6;
+}
+.bg-polaroid-blue {
+  background-color: #7d8491;
+  color: #f5ebe6;
+}
+.bg-polaroid-navy {
+  background-color: #2b3a4a;
+  color: #f5ebe6;
+}
+.bg-polaroid-tan {
+  background-color: #e8dacf;
+  color: #58181f; /* Teks warna maroon biar kontras terbaca */
+}
+
+/* ========================================= */
+/* DEKORASI JUDUL "YOU MIGHT LIKE"           */
+
+.judul-rekomendasi::after {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* Jarak garis ke teks */
+  left: 0;
+  width: 40%; /* Panjang garisnya cuma 40% dari panjang tulisan biar estetik */
+  height: 4px; /* Ketebalan garis */
+  background-color: #58181f; /* Warna maroon */
+  border-radius: 10px; /* Ujung garisnya melengkung tumpul */
+}
